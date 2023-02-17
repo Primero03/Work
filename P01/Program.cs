@@ -34,3 +34,16 @@ for (int i = 0; i < arrayLength3; i++)
     }
 
 }
+
+string[] temporary = new string[temporaryLengt];
+int j = 0;
+for (int i = 0; i < arrayLength3; i++)
+{
+    if (array[i].Length <= 3 && array[i].Length > 0)
+    {
+        temporary[j] = array[i];
+        j++;
+    }
+}
+System.Console.Write("New array:");
+System.Console.WriteLine('[' + string.Join(",", temporary) + ']');

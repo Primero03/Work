@@ -24,3 +24,13 @@ for (int i = 0; i < arrayLength3; i++)
     array[i] = Console.ReadLine();
 }
 System.Console.WriteLine('[' + string.Join(",", array) + ']');
+
+int temporaryLengt = 0;
+for (int i = 0; i < arrayLength3; i++)
+{
+    if (array[i].Length <= 3 && array[i].Length > 0)
+    {
+        temporaryLengt++;
+    }
+
+}
